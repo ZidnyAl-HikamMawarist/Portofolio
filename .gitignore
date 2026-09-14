@@ -1,0 +1,8 @@
+# Internal notes & documentation
+docs/*.md
+
+# OS / Editor temporary files
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
