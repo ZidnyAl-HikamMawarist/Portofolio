@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>Zidny Al Hikam M. — Software Engineering Student | Portofolio PKL</title>
+  <meta name="description" content="Portofolio resmi Zidny Al Hikam M., siswa SMK Negeri 1 Ciamis Jurusan Rekayasa Perangkat Lunak (RPL). Juara 3 LKS AI Jawa Barat, berpengalaman membangun web & mobile app (Laravel, React, Next.js, Node.js).">
+  <meta name="keywords" content="Zidny Al Hikam, Portofolio PKL, Web Developer, SMKN 1 Ciamis, Siswa RPL, Full-Stack, Laravel, Next.js, AI, LKS AI Jawa Barat">
+  <meta name="author" content="Zidny Al Hikam M.">
+  <meta name="theme-color" content="#0b0f19">
+
+  <!-- Open Graph / Meta Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zidny Al Hikam M. — Software Engineering Student | Lampiran CV PKL">
+  <meta property="og:description" content="Koleksi proyek pilihan, kemampuan teknis full-stack & AI, dan profil siswa SMKN 1 Ciamis siap penempatan PKL/Magang.">
+  <meta property="og:image" content="images/profil.jpeg">
+
+  <!-- Google Fonts: Outfit (Headings) & Plus Jakarta Sans (Body) & JetBrains Mono (Tech/Code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accessibility Skip link -->
+  <a href="#main-content" class="skip-link">Lewati ke Konten Utama</a>
+
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+
+  <!-- Header & Sticky Navigation Bar -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="Beranda Portofolio Zidny Al Hikam M.">
+        <span class="brand-badge">ZH</span>
+        <span class="brand-text">Zidny<span class="brand-accent">.dev</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Navigasi Utama">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">Tentang</a></li>
+          <li><a href="#skills" class="nav-link">Keahlian</a></li>
+          <li><a href="#projects" class="nav-link">Proyek</a></li>
+          <li><a href="#experience" class="nav-link">Prestasi &amp; Riwayat</a></li>
+          <li><a href="#contact" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions: Theme Switcher & CV Modal Trigger -->
+      <div class="header-actions">
+        <!-- Dark / Light Mode Toggle Button -->
+        <button id="theme-toggle" class="icon-button" aria-label="Ganti Tema Tampilan" title="Ganti Tema">
+          <svg class="theme-icon icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="theme-icon icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Quick CV Button -->
+        <button class="btn btn-secondary btn-sm header-cv-btn" id="btn-open-cv-modal">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Unduh CV</span>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobile-menu-toggle" class="icon-button mobile-toggle" aria-label="Buka Menu Navigasi" aria-expanded="false" aria-controls="mobile-nav">
+          <svg class="menu-icon-bars" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="menu-icon-close" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navigasi Mobile">
+      <div class="mobile-nav-inner">
+        <ul class="mobile-nav-list">
+          <li><a href="#about" class="mobile-nav-link">Tentang Saya</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Keahlian &amp; Stack</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Karya &amp; Proyek</a></li>
+          <li><a href="#experience" class="mobile-nav-link">Prestasi &amp; Riwayat</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Hubungi Saya</a></li>
+        </ul>
+        <div class="mobile-nav-actions">
+          <button class="btn btn-primary w-full" id="btn-mobile-cv">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Unduh Resume / CV (PDF)</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Body -->
+  <main id="main-content">
+    
+    <!-- 1. HERO SECTION (FR-01, FR-05) -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Left: Hero Text & Identity -->
+        <div class="hero-content reveal">
+          <!-- Availability Pill -->
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span class="status-text">Tersedia untuk PKL / Magang Periode 2026/2027</span>
+          </div>
+
+          <p class="hero-greeting">Halo, perkenalkan saya</p>
+          <h1 class="hero-title">
+            <span class="text-gradient">Zidny Al Hikam M.</span>
+          </h1>
+          <h2 class="hero-subtitle">Software Engineering Student &bull; Full-Stack &amp; AI Enthusiast</h2>
+          
+          <p class="hero-description">
+            Siswa kelas 12 Jurusan Rekayasa Perangkat Lunak di <strong>SMKN 1 Ciamis</strong> (Peringkat 3 Besar, Rata-rata &gt;90) dan <strong>Juara 3 LKS Bidang AI Tingkat Provinsi Jawa Barat</strong>. Berpengalaman membangun aplikasi web &amp; mobile end-to-end (Laravel, React, Next.js, Node.js, AI Integration), terbiasa dengan UI/UX Figma, serta siap berkontribusi optimal sebagai Full-Stack Developer magang.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Lihat Hasil Proyek</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            
+            <button class="btn btn-secondary" id="hero-btn-download-cv">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download CV (PDF)</span>
+            </button>
+
+            <a href="#contact" class="btn btn-ghost">
+              <span>Hubungi Saya</span>
+            </a>
+          </div>
+
+          <!-- Quick Micro-Badges -->
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <span class="highlight-val">Juara 3</span>
+              <span class="highlight-lbl">LKS AI Jawa Barat</span>
+            </div>
+            <div class="highlight-separator"></div>
+            <div class="highlight-item">
+              <span class="highlight-val">&gt;90</span>
+              <span class="highlight-lbl">Rata-rata Akademik</span>
+            </div>
+            <div class="highlight-separator"></div>
+            <div class="highlight-item">
+              <span class="highlight-val">6+</span>
+              <span class="highlight-lbl">Proyek Nyata Teruji</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Visual Portrait / Avatar Showcase -->
+        <div class="hero-visual reveal">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-backdrop-glow"></div>
+            <div class="avatar-card">
+              <img 
+                src="images/profil.jpeg" 
+                alt="Foto Profil Zidny Al Hikam M. - Siswa Rekayasa Perangkat Lunak SMKN 1 Ciamis" 
+                class="avatar-image"
+                width="420"
+                height="420"
+                loading="eager"
+                onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'420\' height=\'420\' viewBox=\'0 0 420 420\'><rect width=\'100%\' height=\'100%\' fill=\'%23111827\'/><circle cx=\'210\' cy=\'170\' r=\'70\' fill=\'%232563eb\' opacity=\'0.4\'/><circle cx=\'210\' cy=\'360\' r=\'120\' fill=\'%232563eb\' opacity=\'0.4\'/><text x=\'50%\' y=\'50%\' font-size=\'22\' fill=\'%23e2e8f0\' font-family=\'sans-serif\' text-anchor=\'middle\'>Zidny Al Hikam M.</text></svg>';"
+              >
+            </div>
+
+            <!-- Interactive Floating Badges -->
+            <div class="floating-badge badge-top-right">
+              <div class="floating-badge-icon icon-code">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div class="floating-badge-content">
+                <span class="floating-badge-title">3rd Place LKS AI</span>
+                <span class="floating-badge-sub">Tingkat Provinsi Jawa Barat</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <div class="floating-badge-icon icon-check">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="floating-badge-content">
+                <span class="floating-badge-title">Full-Stack &amp; AI</span>
+                <span class="floating-badge-sub">Laravel &bull; Next.js &bull; Gemini API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION (FR-02) -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span>Tentang Saya</span>
+          </div>
+          <h2 class="section-title">Dedikasi, Karakter &amp; Latar Belakang</h2>
+          <p class="section-subtitle">Mengenal lebih dekat motivasi, dasar keilmuan, dan komitmen profesional saya menjelang pelaksanaan PKL.</p>
+        </div>
+
+        <div class="about-bento-grid">
+          <!-- Main Narrative Card -->
+          <article class="bento-card bento-narrative reveal">
+            <div class="bento-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3 class="bento-title">Profil Ringkas</h3>
+            <p class="bento-text">
+              Saya adalah siswa kelas 12 di <strong>SMK Negeri 1 Ciamis</strong> pada Kompetensi Keahlian <strong>Rekayasa Perangkat Lunak (RPL)</strong>, yang konsisten berada di jajaran 3 besar dengan nilai rata-rata di atas 90. Memiliki pengalaman nyata dalam rekayasa aplikasi web dan mobile menggunakan <strong>React, Next.js, Laravel, dan Node.js</strong>, dengan ketertarikan tinggi pada integrasi proyek berbasis <em>Artificial Intelligence</em> (AI).
+            </p>
+            <p class="bento-text">
+              Selain penguasaan teknis backend dan frontend, saya memiliki keterampilan mendesain UI/UX intuitif di Figma, serta terbiasa mempresentasikan ide dan berkomunikasi secara profesional. Meraih <strong>Juara 3 LKS Bidang AI Tingkat Provinsi Jawa Barat</strong> membuktikan kemampuan analisis, problem solving, dan eksekusi solusi dalam tekanan kompetisi industri.
+            </p>
+            <div class="bento-tags">
+              <span class="tag-pill">Full-Stack Development</span>
+              <span class="tag-pill">AI &amp; LLM Integration</span>
+              <span class="tag-pill">UI/UX Design Figma</span>
+              <span class="tag-pill">Clean Architecture</span>
+              <span class="tag-pill">Fast Learner</span>
+            </div>
+          </article>
+
+          <!-- Education Card -->
+          <article class="bento-card bento-edu reveal">
+            <div class="bento-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <h3 class="bento-title">Pendidikan Kejuruan</h3>
+            <div class="edu-item">
+              <h4 class="edu-school">SMK Negeri 1 Ciamis</h4>
+              <p class="edu-major">Kompetensi Keahlian: Rekayasa Perangkat Lunak (Software Engineering)</p>
+              <span class="edu-period">2024 &mdash; 2027 (Kelas 12 Aktif)</span>
+            </div>
+            <div class="edu-highlights-list">
+              <div class="edu-check-item">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Konsisten meraih peringkat 3 besar paralel jurusan RPL</span>
+              </div>
+              <div class="edu-check-item">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Rata-rata nilai akademik produktif kejuruan: &gt;90 / 100</span>
+              </div>
+              <div class="edu-check-item">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Juara 3 Lomba Kompetensi Siswa (LKS) AI Tingkat Jawa Barat</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Readiness Card -->
+          <article class="bento-card bento-readiness reveal">
+            <div class="bento-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <h3 class="bento-title">Kesiapan Penempatan PKL</h3>
+            <ul class="readiness-list">
+              <li class="readiness-item">
+                <span class="readiness-label">Status Ketersediaan:</span>
+                <span class="readiness-val badge-ready">Siap Ditempatkan</span>
+              </li>
+              <li class="readiness-item">
+                <span class="readiness-label">Domisili Asal:</span>
+                <span class="readiness-val">Ciamis, Jawa Barat</span>
+              </li>
+              <li class="readiness-item">
+                <span class="readiness-label">Model Kerja:</span>
+                <span class="readiness-val">On-Site / Hybrid / Remote</span>
+              </li>
+              <li class="readiness-item">
+                <span class="readiness-label">Durasi Magang:</span>
+                <span class="readiness-val">3 s.d. 6 Bulan</span>
+              </li>
+              <li class="readiness-item">
+                <span class="readiness-label">Peralatan Kerja:</span>
+                <span class="readiness-val">Laptop &amp; Koneksi Mandiri Siap</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Focus Area Card -->
+          <article class="bento-card bento-focus reveal">
+            <div class="bento-icon-wrapper">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="bento-title">Fokus &amp; Minat Karir</h3>
+            <div class="focus-grid">
+              <div class="focus-chip">
+                <span class="focus-title">Full-Stack Web Development</span>
+                <span class="focus-desc">Laravel, Next.js, React, Node.js, REST API</span>
+              </div>
+              <div class="focus-chip">
+                <span class="focus-title">AI Integration &amp; Vision</span>
+                <span class="focus-desc">Google Gemini API, Multimodal LLM, Automation</span>
+              </div>
+              <div class="focus-chip">
+                <span class="focus-title">Mobile &amp; UI/UX Engineering</span>
+                <span class="focus-desc">Flutter, Kotlin, Figma Prototyping, Design Systems</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS SECTION (FR-03, Matching CV) -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+            <span>Keahlian &amp; Stack</span>
+          </div>
+          <h2 class="section-title">Kompetensi Teknis &amp; Non-Teknis</h2>
+          <p class="section-subtitle">Kumpulan teknologi, basis data, perangkat lunak desain, dan keterampilan komunikasi profesional sesuai CV resmi.</p>
+        </div>
+
+        <div class="skills-categories-grid">
+          
+          <!-- Category 1: Frontend & Mobile -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon icon-code-bracket">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Frontend &amp; Mobile Development</h3>
+                <p class="category-desc">Antarmuka interaktif web &amp; lintas platform</p>
+              </div>
+            </div>
+
+            <div class="skill-chips-list">
+              <div class="skill-chip">
+                <span class="skill-name">Next.js &amp; React 19</span>
+                <span class="skill-level level-high">App Router, SSR, Hooks</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">JavaScript &amp; TypeScript</span>
+                <span class="skill-level level-high">ES6+, Type Safety</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Inertia.js &amp; Livewire</span>
+                <span class="skill-level level-high">Modern Monolith UI</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Tailwind CSS &amp; Bootstrap</span>
+                <span class="skill-level level-high">v4, Utility &amp; Responsive</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Flutter &amp; Kotlin</span>
+                <span class="skill-level level-mid">Mobile Cross-Platform</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend & AI Integration -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon icon-layers">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Backend &amp; AI Integration</h3>
+                <p class="category-desc">Arsitektur server, API &amp; Machine Intelligence</p>
+              </div>
+            </div>
+
+            <div class="skill-chips-list">
+              <div class="skill-chip">
+                <span class="skill-name">Laravel (v11 &amp; v12)</span>
+                <span class="skill-level level-high">MVC, RBAC, Eloquent, Middleware</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">PHP (v8.2 - 8.4)</span>
+                <span class="skill-level level-high">OOP, Service Pattern, DomPDF</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Google Gemini API</span>
+                <span class="skill-level level-high">Vision, Multimodal, Prompt Eng</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Node.js &amp; REST API</span>
+                <span class="skill-level level-mid">Async I/O, Endpoint Routing</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">JWT &amp; Security Guards</span>
+                <span class="skill-level level-mid">Bcrypt, CSRF, Secure Cookies</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: DBMS, Tools & Deployment -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon icon-tools">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">Database &amp; Cloud Deployment</h3>
+                <p class="category-desc">Manajemen data &amp; pipeline hosting</p>
+              </div>
+            </div>
+
+            <div class="skill-chips-list">
+              <div class="skill-chip">
+                <span class="skill-name">MySQL &amp; PostgreSQL</span>
+                <span class="skill-level level-high">Schema Design &amp; Indexing</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Firebase &amp; SQL</span>
+                <span class="skill-level level-mid">Realtime DB &amp; Queries</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Git &amp; GitHub</span>
+                <span class="skill-level level-high">Branching, PR, Code Review</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Vercel &amp; Netlify</span>
+                <span class="skill-level level-high">CI/CD &amp; Edge Functions</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Cloudflare &amp; Postman</span>
+                <span class="skill-level level-mid">DNS, SSL, SSH, API Testing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: UI/UX & Communication -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon icon-users">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="category-title">UI/UX &amp; Additional Skills</h3>
+                <p class="category-desc">Desain visual &amp; kecakapan komunikasi</p>
+              </div>
+            </div>
+
+            <div class="skill-chips-list">
+              <div class="skill-chip">
+                <span class="skill-name">Figma &amp; Canva</span>
+                <span class="skill-level level-high">Wireframing, UI Design System</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Public Speaking &amp; Pitching</span>
+                <span class="skill-level level-soft">Presentasi Ide &amp; Solusi</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Client Communication</span>
+                <span class="skill-level level-soft">Analisis Kebutuhan Klien</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Problem Solving &amp; Logic</span>
+                <span class="skill-level level-soft">Analisis Masalah Sistematis</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-name">Bahasa: ID (Native) &bull; EN</span>
+                <span class="skill-level level-soft">Intermediate Communication</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS SHOWCASE SECTION (FR-04, Centered with Real Projects from docs/) -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+            <span>Hasil Karya &amp; Portofolio</span>
+          </div>
+          <h2 class="section-title">Daftar Proyek Nyata &amp; Kompetisi</h2>
+          <p class="section-subtitle">Aplikasi web dan sistem enterprise yang dibangun untuk mendigitalisasi operasional sekolah, unit usaha, dan kompetisi AI.</p>
+
+          <!-- Filter Category Controls -->
+          <div class="projects-filter-wrapper">
+            <button class="filter-btn active" data-filter="all">Semua Proyek (6)</button>
+            <button class="filter-btn" data-filter="enterprise">Enterprise &amp; ERP</button>
+            <button class="filter-btn" data-filter="ai">AI &amp; Innovation</button>
+            <button class="filter-btn" data-filter="events">Event Management</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- Project 1: MAS-PKL (Flagship Project) -->
+          <article class="project-card reveal" data-category="enterprise" data-project-id="mas-pkl">
+            <div class="project-thumb-container">
+              <img 
+                src="images/pkl.png" 
+                alt="Tampilan Antarmuka MAS-PKL - Dashboard Super Admin" 
+                class="project-thumbnail"
+                width="640" 
+                height="360"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary project-quick-view-btn" data-project="mas-pkl">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  <span>Lihat Detail Lengkap</span>
+                </button>
+              </div>
+              <span class="project-badge-type">Flagship Enterprise</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-header">
+                <span class="project-category-tag">SMKN 1 Ciamis &bull; Mitra DUDI</span>
+                <span class="project-role-tag">Full-Stack Web Developer</span>
+              </div>
+
+              <h3 class="project-title">
+                <a href="#projects" class="project-title-link" data-project="mas-pkl">
+                  MAS-PKL: Sistem Manajemen &amp; Presensi PKL Terpadu
+                </a>
+              </h3>
+
+              <p class="project-desc">
+                Platform terintegrasi berbasis web untuk mendigitalisasi siklus PKL di SMKN 1 Ciamis bersama ratusan mitra industri (DUDI). Dilengkapi RBAC 7 tingkatan, presensi harian &amp; jurnal foto, GIS Leaflet mapping, parser PDF kurikulum, dan generator DomPDF resmi.
+              </p>
+
+              <div class="project-problem-box">
+                <span class="problem-label">Dampak &amp; Solusi:</span>
+                <p class="problem-text">Memangkas waktu administratif sekolah &gt;80% melalui generasi instan sertifikat, surat pengantar, rekap jurnal, dan pemetaan geografis siswa di industri.</p>
+              </div>
+
+              <div class="project-stack">
+                <span class="stack-badge">Laravel 11</span>
+                <span class="stack-badge">PHP 8.4</span>
+                <span class="stack-badge">MySQL</span>
+                <span class="stack-badge">Tailwind v4</span>
+                <span class="stack-badge">Leaflet.js GIS</span>
+                <span class="stack-badge">DomPDF</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm btn-view-detail" data-project="mas-pkl">
+                  Detail Fitur &amp; Arsitektur
+                </button>
+                <a href="https://github.com/Sentinel-SMKN1CIAMIS/sistem-pkl" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" aria-label="Lihat GitHub MAS-PKL">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: EcoVision AI (LKS AI Competition Standard) -->
+          <article class="project-card reveal" data-category="ai" data-project-id="ecovision-ai">
+            <div class="project-thumb-container">
+              <img 
+                src="images/ecovision.png" 
+                alt="Antarmuka EcoVision AI - Smart Waste Classification & Sustainability Web App" 
+                class="project-thumbnail"
+                width="640" 
+                height="360"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary project-quick-view-btn" data-project="ecovision-ai">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  <span>Lihat Detail Lengkap</span>
+                </button>
+              </div>
+              <span class="project-badge-type">AI Competition Project</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-header">
+                <span class="project-category-tag">Next.js 16 &bull; Google Gemini API</span>
+                <span class="project-role-tag">Full-Stack &amp; AI Integrator</span>
+              </div>
+
+              <h3 class="project-title">
+                <a href="#projects" class="project-title-link" data-project="ecovision-ai">
+                  EcoVision AI: Smart Waste Classification &amp; Carbon Offset
+                </a>
+              </h3>
+
+              <p class="project-desc">
+                Aplikasi web pemilah sampah cerdas berbasis multimodal AI. Mengintegrasikan Google Gemini 2.5 Flash Vision API untuk menganalisis foto sampah secara real-time, estimasi masa urai, rekomendasi daur ulang, dan kalkulasi jejak karbon (CO₂ offset).
+              </p>
+
+              <div class="project-problem-box">
+                <span class="problem-label">Dampak &amp; Solusi:</span>
+                <p class="problem-text">Solusi pengelolaan sampah interaktif berstandar kompetisi AI, lengkap dengan chatbot eco-assistant, testing dashboard batch dataset, dan arsitektur dual storage (MySQL &amp; LocalStorage).</p>
+              </div>
+
+              <div class="project-stack">
+                <span class="stack-badge">Next.js 16</span>
+                <span class="stack-badge">TypeScript</span>
+                <span class="stack-badge">Gemini 2.5 Flash</span>
+                <span class="stack-badge">MySQL</span>
+                <span class="stack-badge">JWT Auth</span>
+                <span class="stack-badge">Tailwind CSS</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm btn-view-detail" data-project="ecovision-ai">
+                  Detail Fitur &amp; AI Stack
+                </button>
+                <a href="https://github.com/PradiptaPPLG/ECOVISION-AI" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" aria-label="Lihat GitHub EcoVision AI">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: RoseMarry (Smart POS & Teaching Factory ERP) -->
+          <article class="project-card reveal" data-category="enterprise" data-project-id="rosemarry">
+            <div class="project-thumb-container">
+              <img 
+                src="images/RoseMary.png" 
+                alt="Antarmuka RoseMarry - Smart POS & Teaching Factory ERP System" 
+                class="project-thumbnail"
+                width="640" 
+                height="360"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary project-quick-view-btn" data-project="rosemarry">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  <span>Lihat Detail Lengkap</span>
+                </button>
+              </div>
+              <span class="project-badge-type">Teaching Factory ERP</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-header">
+                <span class="project-category-tag">Laravel 12 &bull; Livewire 3</span>
+                <span class="project-role-tag">Full-Stack Web Developer</span>
+              </div>
+
+              <h3 class="project-title">
+                <a href="#projects" class="project-title-link" data-project="rosemarry">
+                  RoseMarry: Smart POS &amp; Teaching Factory ERP System
+                </a>
+              </h3>
+
+              <p class="project-desc">
+                Sistem terpadu Point of Sale (POS) dan mini-ERP untuk unit produksi Teaching Factory sekolah. Memadukan autentikasi kasir 4-digit PIN terintegrasi shift &amp; presensi siswa, perhitungan Bill of Materials (BOM) produksi resep, pelacakan bahan baku, dan laporan laba-rugi.
+              </p>
+
+              <div class="project-problem-box">
+                <span class="problem-label">Dampak &amp; Solusi:</span>
+                <p class="problem-text">Mencegah kebocoran inventaris dan waste bahan baku secara otomatis saat produk dibuat, serta mencatat kehadiran siswa saat login bertransaksi di kasir.</p>
+              </div>
+
+              <div class="project-stack">
+                <span class="stack-badge">Laravel 12</span>
+                <span class="stack-badge">Livewire 3.7</span>
+                <span class="stack-badge">PHP 8.2+</span>
+                <span class="stack-badge">MySQL</span>
+                <span class="stack-badge">Spatie RBAC</span>
+                <span class="stack-badge">Tailwind CSS</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm btn-view-detail" data-project="rosemarry">
+                  Detail Fitur &amp; ERP Stack
+                </button>
+                <a href="https://github.com/Wisnu-click/Rosemary" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" aria-label="Lihat GitHub RoseMarry">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: ARTIKA POS (Enterprise Retail Point of Sale) -->
+          <article class="project-card reveal" data-category="enterprise" data-project-id="artika-pos">
+            <div class="project-thumb-container">
+              <img 
+                src="images/artika.png" 
+                alt="Antarmuka ARTIKA POS - Sistem Kasir & Manajemen Stok Terintegrasi" 
+                class="project-thumbnail"
+                width="640" 
+                height="360"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary project-quick-view-btn" data-project="artika-pos">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  <span>Lihat Detail Lengkap</span>
+                </button>
+              </div>
+              <span class="project-badge-type">Retail POS System</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-header">
+                <span class="project-category-tag">Laravel 12 &bull; Repository Pattern</span>
+                <span class="project-role-tag">Full Stack Developer</span>
+              </div>
+
+              <h3 class="project-title">
+                <a href="#projects" class="project-title-link" data-project="artika-pos">
+                  ARTIKA POS: Sistem Kasir &amp; Manajemen Stok Terintegrasi
+                </a>
+              </h3>
+
+              <p class="project-desc">
+                Aplikasi Point of Sale (POS) dan manajemen gudang retail modern. Dibangun dengan Service Layer &amp; Repository Pattern, integrasi barcode scanner, shortcut keyboard (F1–F9), penahanan transaksi (Hold), dan pembukuan otomatis jurnal debit/kredit.
+              </p>
+
+              <div class="project-problem-box">
+                <span class="problem-label">Dampak &amp; Solusi:</span>
+                <p class="problem-text">Mempercepat antrian transaksi kasir tanpa mouse, akurasi stock opname fisik real-time, audit trail keamanan ketat, dan cetak laporan PDF/CSV otomatis.</p>
+              </div>
+
+              <div class="project-stack">
+                <span class="stack-badge">Laravel 12</span>
+                <span class="stack-badge">Bootstrap 5.3</span>
+                <span class="stack-badge">PostgreSQL/MySQL</span>
+                <span class="stack-badge">Service Layer</span>
+                <span class="stack-badge">Barcode Scanner</span>
+                <span class="stack-badge">DomPDF</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm btn-view-detail" data-project="artika-pos">
+                  Detail Fitur &amp; Arsitektur
+                </button>
+                <a href="https://github.com/rasyakt/ARTIKA" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" aria-label="Lihat GitHub ARTIKA POS">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Leo's Event (Event & Competition Management) -->
+          <article class="project-card reveal" data-category="events" data-project-id="leos-event">
+            <div class="project-thumb-container">
+              <img 
+                src="images/leos.png" 
+                alt="Antarmuka Leo's Event - Sistem Informasi Manajemen Event & Lomba Terpadu" 
+                class="project-thumbnail"
+                width="640" 
+                height="360"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary project-quick-view-btn" data-project="leos-event">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  <span>Lihat Detail Lengkap</span>
+                </button>
+              </div>
+              <span class="project-badge-type">Competition Platform</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-header">
+                <span class="project-category-tag">Laravel 12 &bull; Alpine.js</span>
+                <span class="project-role-tag">Full-Stack Web Developer</span>
+              </div>
+
+              <h3 class="project-title">
+                <a href="#projects" class="project-title-link" data-project="leos-event">
+                  Leo's Event: Manajemen Event &amp; Registrasi Lomba Terpadu
+                </a>
+              </h3>
+
+              <p class="project-desc">
+                Platform perlombaan tahunan end-to-end dengan algoritma deteksi pendaftaran ganda (DuplicateCheckerService), penutupan registrasi otomatis jadwal TM, generator presensi A4 PDF panitia, dan import Excel berfitur batch rollback.
+              </p>
+
+              <div class="project-problem-box">
+                <span class="problem-label">Dampak &amp; Solusi:</span>
+                <p class="problem-text">Mencegah manipulasi dan redudansi data peserta, memudahkan panitia mencetak lembar absensi lomba sekali klik, serta fitur interaktif Polling dan Cheer Wall.</p>
+              </div>
+
+              <div class="project-stack">
+                <span class="stack-badge">Laravel 12</span>
+                <span class="stack-badge">Alpine.js</span>
+                <span class="stack-badge">Tailwind CSS</span>
+                <span class="stack-badge">MySQL</span>
+                <span class="stack-badge">DomPDF</span>
+                <span class="stack-badge">SimpleXLSX</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm btn-view-detail" data-project="leos-event">
+                  Detail Fitur &amp; Algoritma
+                </button>
+                <a href="https://github.com/ZidnyAl-HikamMawarist/leosEvent" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" aria-label="Lihat GitHub Leo's Event">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: SummitGear (Outdoor Rental Management & POS System) -->
+          <article class="project-card reveal" data-category="enterprise" data-project-id="summitgear">
+            <div class="project-thumb-container">
+              <img 
+                src="images/summit.png" 
+                alt="Antarmuka SummitGear - Outdoor Rental Management & POS System" 
+                class="project-thumbnail"
+                width="640" 
+                height="360"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <button class="btn btn-sm btn-primary project-quick-view-btn" data-project="summitgear">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  <span>Lihat Detail Lengkap</span>
+                </button>
+              </div>
+              <span class="project-badge-type">Outdoor Rental &amp; POS</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-header">
+                <span class="project-category-tag">Laravel &bull; Livewire &bull; Flux UI</span>
+                <span class="project-role-tag">Full-Stack Web Developer</span>
+              </div>
+
+              <h3 class="project-title">
+                <a href="#projects" class="project-title-link" data-project="summitgear">
+                  SummitGear: Point of Sale &amp; Outdoor Rental Management System
+                </a>
+              </h3>
+
+              <p class="project-desc">
+                Platform web persewaan alat outdoor terpadu yang memadukan reservasi online, antarmuka kasir POS cepat, manajemen QC gudang berbasis Kanban, serta sistem keamanan enterprise dengan 2FA Google Authenticator.
+              </p>
+
+              <div class="project-problem-box">
+                <span class="problem-label">Dampak &amp; Solusi:</span>
+                <p class="problem-text">Mencegah bentrok jadwal (double booking), memantau pemeliharaan alat kotor/rusak di gudang, serta mengotomatisasi perhitungan denda keterlambatan dan deposit sewa.</p>
+              </div>
+
+              <div class="project-stack">
+                <span class="stack-badge">Laravel</span>
+                <span class="stack-badge">Livewire</span>
+                <span class="stack-badge">Flux UI</span>
+                <span class="stack-badge">Tailwind CSS</span>
+                <span class="stack-badge">Google 2FA</span>
+                <span class="stack-badge">Playwright E2E</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm btn-view-detail" data-project="summitgear">
+                  Detail Fitur &amp; Keamanan
+                </button>
+                <a href="https://summit.zidny.web.id/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" aria-label="Buka Live Demo SummitGear">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com/ZidnyAl-HikamMawarist/SummitGear" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" aria-label="Lihat GitHub SummitGear">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EXPERIENCE, EDUCATION & CERTIFICATIONS (FR-10) -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+            <span>Riwayat &amp; Prestasi</span>
+          </div>
+          <h2 class="section-title">Prestasi Kompetisi, Pendidikan &amp; Pengalaman</h2>
+          <p class="section-subtitle">Jejak capaian akademik berprestasi, keikutsertaan kompetisi kejuruan tingkat provinsi, dan kepengurusan proyek nyata.</p>
+        </div>
+
+        <div class="experience-layout-grid">
+          
+          <!-- Column 1: Pendidikan & Prestasi LKS -->
+          <div class="timeline-column reveal">
+            <h3 class="column-title">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span>Pendidikan Formal &amp; Penghargaan</span>
+            </h3>
+
+            <div class="timeline-container">
+              
+              <!-- Timeline Item 1: LKS AI -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2025</span>
+                  <h4 class="timeline-role">Juara 3 — Lomba Kompetensi Siswa (LKS) Bidang AI</h4>
+                  <p class="timeline-org">Tingkat Provinsi Jawa Barat (West Java Provincial AI Competency Competition)</p>
+                  <p class="timeline-desc">
+                    Meraih Juara 3 dalam kompetisi bergengsi LKS bidang Artificial Intelligence, bersaing dengan perwakilan terbaik SMK se-Jawa Barat dalam problem solving algoritma, pipeline machine learning, dan integrasi model cerdas ke aplikasi.
+                  </p>
+                  <div class="timeline-tags">
+                    <span class="badge-subtle">Artificial Intelligence</span>
+                    <span class="badge-subtle">Provincial Level</span>
+                    <span class="badge-subtle">3rd Place Winner</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Timeline Item 2: SMKN 1 Ciamis -->
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2024 &mdash; 2027 (Aktif)</span>
+                  <h4 class="timeline-role">Siswa Rekayasa Perangkat Lunak (Kelas 12)</h4>
+                  <p class="timeline-org">SMK Negeri 1 Ciamis</p>
+                  <p class="timeline-desc">
+                    Konsisten menempati peringkat 3 besar siswa terbaik jurusan dengan rata-rata nilai di atas 90. Menguasai pemrograman web full-stack, basis data relasional, mobile development, dan arsitektur sistem enterprise.
+                  </p>
+                  <div class="timeline-tags">
+                    <span class="badge-subtle">Peringkat 3 Besar</span>
+                    <span class="badge-subtle">Nilai Rata-rata &gt;90</span>
+                    <span class="badge-subtle">Software Engineering</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Column 2: Pengalaman Proyek & Pelatihan Nyata -->
+          <div class="timeline-column reveal">
+            <h3 class="column-title">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              <span>Kiprah Proyek Nyata Sekolah</span>
+            </h3>
+
+            <div class="certifications-list">
+              
+              <!-- Card 1 -->
+              <div class="cert-card">
+                <div class="cert-badge-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                  </svg>
+                </div>
+                <div class="cert-info">
+                  <span class="cert-issuer">SMKN 1 Ciamis &bull; Pokja PKL</span>
+                  <h4 class="cert-name">Lead Developer &mdash; Platform MAS-PKL</h4>
+                  <p class="cert-details">Membangun sistem terintegrasi manajemen magang untuk ratusan siswa dan puluhan mitra industri (DUDI) dengan Laravel 11, Leaflet GIS, dan DomPDF.</p>
+                  <div class="cert-footer">
+                    <span class="cert-date">Implementasi Nyata</span>
+                    <span class="cert-status">Aktif Berjalan</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="cert-card">
+                <div class="cert-badge-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div class="cert-info">
+                  <span class="cert-issuer">Teaching Factory &bull; Unit Usaha Sekolah</span>
+                  <h4 class="cert-name">Pengembang Sistem ERP RoseMarry &amp; ARTIKA POS</h4>
+                  <p class="cert-details">Mendigitalisasi transaksi ritel dan tata boga sekolah dengan autentikasi PIN, integrasi scan barcode, dan manajemen bahan baku (BOM) otomatis.</p>
+                  <div class="cert-footer">
+                    <span class="cert-date">Laravel 12 &amp; Livewire 3</span>
+                    <span class="cert-status">Production Ready</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="cert-card">
+                <div class="cert-badge-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                  </svg>
+                </div>
+                <div class="cert-info">
+                  <span class="cert-issuer">Artificial Intelligence Innovation</span>
+                  <h4 class="cert-name">EcoVision AI &bull; Smart Waste Classifier</h4>
+                  <p class="cert-details">Inovasi pemilah sampah cerdas berbasis Next.js 16 dan Google Gemini 2.5 Flash Vision API dengan deteksi emisi CO₂.</p>
+                  <div class="cert-footer">
+                    <span class="cert-date">AI LKS Showcase</span>
+                    <span class="cert-status">Terverifikasi</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT SECTION (FR-06) -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>Hubungi Saya</span>
+          </div>
+          <h2 class="section-title">Mari Terhubung untuk Peluang PKL</h2>
+          <p class="section-subtitle">Apakah perusahaan Anda sedang membuka kesempatan magang atau proyek PKL? Saya siap mendiskusikan kualifikasi saya lebih lanjut.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Direct Channels & Contact Info -->
+          <div class="contact-info-panel reveal">
+            <h3 class="contact-panel-title">Saluran Komunikasi Langsung</h3>
+            <p class="contact-panel-desc">
+              Pihak HRD, pembimbing industri, atau tim rekrutmen dapat menghubungi saya langsung melalui saluran di bawah ini. Saya berkomitmen merespons setiap pesan dalam kurun waktu &lt; 24 jam kerja.
+            </p>
+
+            <div class="contact-methods-list">
+              
+              <!-- Email Item with Copy Button -->
+              <div class="contact-method-card">
+                <div class="method-icon icon-email">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Alamat Email Resmi</span>
+                  <a href="mailto:zidni.hikam1@gmail.com" class="method-value" id="email-text">zidni.hikam1@gmail.com</a>
+                </div>
+                <button class="btn-icon-copy" id="btn-copy-email" title="Salin Email ke Clipboard" aria-label="Salin alamat email">
+                  <svg class="copy-default" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <svg class="copy-success" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- WhatsApp Direct Link -->
+              <a href="https://wa.me/6283895184044?text=Halo%20Zidny,%20kami%20tertarik%20dengan%20portofolio%20Anda%20untuk%20peluang%20PKL" target="_blank" rel="noopener noreferrer" class="contact-method-card contact-link-card">
+                <div class="method-icon icon-wa">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">WhatsApp (Chat Langsung)</span>
+                  <span class="method-value">+62 838-9518-4044</span>
+                </div>
+                <svg class="link-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+
+              <!-- GitHub Profile -->
+              <a href="https://github.com/ZidnyAl-HikamMawarist" target="_blank" rel="noopener noreferrer" class="contact-method-card contact-link-card">
+                <div class="method-icon icon-github">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">GitHub Repository</span>
+                  <span class="method-value">github.com/ZidnyAl-HikamMawarist</span>
+                </div>
+                <svg class="link-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+
+              <!-- Location Info -->
+              <div class="contact-method-card">
+                <div class="method-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="method-details">
+                  <span class="method-label">Lokasi / Domisili</span>
+                  <span class="method-value">Ciamis, Jawa Barat, Indonesia</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-panel reveal">
+            <h3 class="contact-panel-title">Kirim Pesan atau Undangan Wawancara</h3>
+            <p class="contact-panel-desc">Tinggalkan pesan Anda, saya akan membalas via email atau WhatsApp sesegera mungkin.</p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Nama Pengirim / Perusahaan <span class="required">*</span></label>
+                  <input type="text" id="form-name" name="name" class="form-input" placeholder="Contoh: Bpk. Hendra / PT Digital Inovasi" required>
+                  <span class="form-error-msg" id="name-error">Mohon isi nama Anda atau instansi Anda.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Email Kontak <span class="required">*</span></label>
+                  <input type="email" id="form-email" name="email" class="form-input" placeholder="nama@perusahaan.com" required>
+                  <span class="form-error-msg" id="email-error">Masukkan alamat email yang valid.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subjek / Topik Pembahasan <span class="required">*</span></label>
+                <input type="text" id="form-subject" name="subject" class="form-input" placeholder="Contoh: Penawaran Tempat PKL / Wawancara Teknis" required>
+                <span class="form-error-msg" id="subject-error">Tuliskan subjek pesan secara singkat.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Isi Pesan <span class="required">*</span></label>
+                <textarea id="form-message" name="message" rows="5" class="form-textarea" placeholder="Tuliskan detail informasi penawaran PKL atau pertanyaan Anda di sini..." required></textarea>
+                <span class="form-error-msg" id="message-error">Pesan tidak boleh kosong (minimal 10 karakter).</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-full btn-submit" id="btn-submit-form">
+                <span class="submit-spinner" aria-hidden="true"></span>
+                <span class="submit-text">Kirim Pesan Sekarang</span>
+                <svg class="submit-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div class="form-feedback-alert" id="form-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 7. FOOTER SECTION -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <span class="brand-badge">ZH</span>
+            <span class="brand-text">Zidny Al Hikam M.</span>
+          </a>
+          <p class="footer-tagline">
+            Siswa SMK Negeri 1 Ciamis Jurusan Rekayasa Perangkat Lunak. Berdedikasi membangun perangkat lunak berdampak tinggi dan siap memberikan kontribusi nyata di industri.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <span class="footer-heading">Navigasi Halaman</span>
+          <ul class="footer-links">
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#projects">Daftar Proyek</a></li>
+            <li><a href="#experience">Prestasi &amp; Riwayat</a></li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-tech">
+          <span class="footer-heading">Spesifikasi Website</span>
+          <p class="footer-tech-desc">
+            Website statis ringan tanpa library pihak ketiga yang berat. Dibuat dengan Semantic HTML5, Vanilla CSS Modern, dan JavaScript ES6+ murni.
+          </p>
+          <div class="footer-badges">
+            <span class="mini-pill">Fast &lt;1.0s</span>
+            <span class="mini-pill">No Framework Slop</span>
+            <span class="mini-pill">A11y Friendly</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 Zidny Al Hikam M. Seluruh hak cipta dilindungi undang-undang.
+        </p>
+        <p class="footer-note">
+          Lampiran Resmi CV Praktik Kerja Lapangan (PKL) &bull; SMKN 1 Ciamis
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTION: BACK TO TOP BUTTON WITH PROGRESS RING -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Kembali ke bagian paling atas halaman" title="Ke Atas">
+    <svg class="progress-ring" width="48" height="48" viewBox="0 0 48 48">
+      <circle class="progress-ring-bg" cx="24" cy="24" r="20" fill="none" stroke-width="3"></circle>
+      <circle class="progress-ring-circle" id="scroll-progress-circle" cx="24" cy="24" r="20" fill="none" stroke-width="3"></circle>
+    </svg>
+    <svg class="arrow-up-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- 8. INTERACTIVE MODAL: PROJECT DETAIL (FR-04) -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="modal-category" id="modal-category">Enterprise &amp; Web App</span>
+          <h3 class="modal-title" id="modal-title">Detail Proyek</h3>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Tutup Dialog Detail Proyek">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body" id="modal-body">
+        <!-- Injected dynamically by index.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 9. INTERACTIVE MODAL: CV PREVIEW & DOWNLOAD (FR-05) -->
+  <div class="modal-backdrop" id="cv-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cv-modal-title">
+    <div class="modal-dialog modal-dialog-lg">
+      <div class="modal-header">
+        <div>
+          <span class="modal-category">Lampiran Resmi CV PKL</span>
+          <h3 class="modal-title" id="cv-modal-title">Curriculum Vitae (CV) &mdash; Zidny Al Hikam M.</h3>
+        </div>
+        <button class="modal-close-btn" id="cv-modal-close-btn" aria-label="Tutup Dialog CV">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="cv-preview-sheet" id="cv-printable-area">
+          <div class="cv-sheet-header">
+            <div>
+              <h2 class="cv-name">ZIDNY AL HIKAM M.</h2>
+              <p class="cv-role">SOFTWARE ENGINEERING STUDENT | INTERNSHIP / PKL APPLICANT</p>
+              <div class="cv-contact-row">
+                <span>Ciamis, Indonesia</span> &bull; 
+                <span>+62 838-9518-4044</span> &bull; 
+                <span>zidni.hikam1@gmail.com</span> &bull; 
+                <span>github.com/ZidnyAl-HikamMawarist</span>
+              </div>
+            </div>
+          </div>
+
+          <hr class="cv-divider">
+
+          <div class="cv-section">
+            <h4 class="cv-heading">Profile</h4>
+            <p class="cv-text">
+              Dedicated 12th-grade Software Engineering student at SMKN 1 Ciamis, consistently ranked among the top three students with an average score above 90. Experienced in web and mobile development using React, Laravel, and Node.js, with an interest in building impactful end-to-end applications, particularly AI-driven projects. Skilled in creating intuitive UI/UX designs using Figma and experienced in presenting ideas and communicating professionally. Achieved 3rd Place in the West Java Provincial AI Competency Competition (LKS). Currently seeking an internship / PKL opportunity to apply technical skills, contribute to a professional team, and further develop as a Full-Stack Developer.
+            </p>
+          </div>
+
+          <div class="cv-section">
+            <h4 class="cv-heading">Education</h4>
+            <div class="cv-sub-item">
+              <div class="cv-sub-header">
+                <strong>SMKN 1 CIAMIS &mdash; Software Engineering</strong>
+                <span>2024 &mdash; 2027</span>
+              </div>
+              <p class="cv-text">
+                &bull; 12th-grade Software Engineering student<br>
+                &bull; Consistently ranked among the top three students<br>
+                &bull; Average academic score above 90
+              </p>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <h4 class="cv-heading">Achievements</h4>
+            <div class="cv-sub-item">
+              <strong>3rd Place &mdash; West Java Provincial AI Competency Competition (LKS)</strong>
+              <p class="cv-text">LKS AI Competition &bull; West Java Province</p>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <h4 class="cv-heading">Flagship Projects</h4>
+            <ul class="cv-bullet-list">
+              <li><strong>MAS-PKL (Full-Stack Web Developer):</strong> Sistem Informasi Manajemen &amp; Presensi PKL SMK Negeri 1 Ciamis dengan Laravel 11, RBAC 7 peran, GIS Leaflet mapping mitra DUDI, smart curriculum parser, dan otomatisasi berkas resmi DomPDF.</li>
+              <li><strong>EcoVision AI (Full-Stack &amp; AI Integrator):</strong> Smart Waste Classification web app berbasis Next.js 16, TypeScript, dan Google Gemini 2.5 Flash API dengan estimasi reduksi CO₂ offset dan testing dashboard batch.</li>
+              <li><strong>RoseMarry (Full-Stack Developer):</strong> Smart POS &amp; mini-ERP Teaching Factory berbasis Laravel 12 &amp; Livewire 3 dengan otentikasi PIN 4-digit kasir terintegrasi shift &amp; presensi siswa serta kalkulasi Bill of Materials (BOM).</li>
+              <li><strong>ARTIKA POS (Full Stack Developer):</strong> Aplikasi kasir cepat dengan barcode scanner, shortcut keyboard (F1–F9), Hold Transaction, 5 level RBAC, dan audit trail.</li>
+              <li><strong>Leo's Event (Full-Stack Developer):</strong> Sistem pendaftaran lomba terpadu dengan algoritma anti-duplikat cerdas, registrasi deadline otomatis, dan generator presensi A4 PDF.</li>
+            </ul>
+          </div>
+
+          <div class="cv-section">
+            <h4 class="cv-heading">Technical &amp; Additional Skills</h4>
+            <p class="cv-text">
+              <strong>Frontend:</strong> HTML, CSS, JavaScript, React, Next.js, Inertia.js, Tailwind CSS<br>
+              <strong>Backend:</strong> PHP, Laravel, Node.js, RESTful API, JWT<br>
+              <strong>Mobile:</strong> Kotlin, Dart, Flutter<br>
+              <strong>DBMS:</strong> MySQL, SQL, Firebase, PostgreSQL<br>
+              <strong>UI/UX &amp; Tools:</strong> Figma, Canva, Wireframing, Git, GitHub, Vercel, Netlify, Cloudflare<br>
+              <strong>Additional:</strong> Public Speaking, Client Communication, Idea Presentation, Problem Solving, Fast Learning<br>
+              <strong>Languages:</strong> Indonesian (Native), English (Intermediate Communication)
+            </p>
+          </div>
+        </div>
+
+        <div class="cv-modal-actions">
+          <button class="btn btn-primary" id="btn-print-cv">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Cetak / Simpan sebagai PDF</span>
+          </button>
+          <a href="docs/cv.pdf" download="CV_Zidny_Al_Hikam_M.pdf" class="btn btn-secondary" id="btn-download-pdf-direct">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Unduh Dokumen Asli (cv.pdf)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
