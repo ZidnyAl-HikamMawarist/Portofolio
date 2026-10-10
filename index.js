@@ -133,6 +133,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Auto close mobile drawer if screen resized to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768 && mobileNav?.classList.contains('active')) {
+      closeMobileMenu();
+    }
+  });
+
 
   // --- 4. SCROLL REVEAL ANIMATION ---
   const revealElements = document.querySelectorAll('.reveal');
