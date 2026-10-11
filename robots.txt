@@ -1,0 +1,9 @@
+# robots.txt for https://portofolio.zidny.web.id/
+User-agent: *
+Allow: /
+
+# Disallow internal documentation if needed
+Disallow: /docs/
+
+# Sitemap location
+Sitemap: https://portofolio.zidny.web.id/sitemap.xml
